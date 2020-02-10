@@ -212,8 +212,8 @@ let allowedTime = 200; // maximum time allowed to travel that distance
 let elapsedTime;
 let startTime;
 
-function handleswipe(isrightswipe){
-  if (isrightswipe)
+function handleswipe(swipedir){
+  if (swipedir == "right")
       slideRight();
   else{
       slideLeft();
