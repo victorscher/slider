@@ -1,0 +1,86 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 5% 95%;
+  grid-template-rows: 40% 60%;
+}
+
+.slider-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.bar{
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  z-index: 999;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.item-1{
+  background-image: url("../img/stock-photo-beautiful-young-arabic-woman-with-black-curly-hairstyle-arab-girl-in-casual-clothes-in-the-street-1016701195.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.item-2{
+  background-image: url("../img/stock-photo-details-of-everyday-elegant-look-unrecognizable-model-wearing-casual-outfit-gray-coat-and-pink-1171815217.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: transform 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.item-3{
+  background-image: url("../img/stock-photo-fashion-tomboy-teen-hipster-short-hairstyle-gen-z-girl-wear-stylish-clothes-glasses-stand-near-neon-1514800850.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: transform 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.item-4{
+  background-image: url("../img/stock-photo-stylish-man-in-a-black-shirt-and-white-pants-stands-on-the-street-under-a-tree-autumn-time-of-the-1034025955.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: transform 0.3s ease-in-out;
+  z-index: 2;
+}
