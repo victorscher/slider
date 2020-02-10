@@ -255,9 +255,9 @@ let sliderContainer = document.querySelector(".slider-container");
 
 swipedetect(sliderContainer, function(swipedir){
     if (swipedir == 'left'){
-      slideLeft();
-    }else if( swipedir == 'right'){
       slideRight();
+    }else if( swipedir == 'right'){
+      slideLeft();
     }
         
 })
